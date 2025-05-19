@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",                         // Suporte para recursos modernos do JS
+      "module": "commonjs",                       // Compatível com Node.js
+      "rootDir": "./",                            // Onde estão seus arquivos fonte
+      "outDir": "./dist",                         // Pasta onde os arquivos compilados serão salvos
+      "strict": true,                             // Ativa verificações rigorosas de tipo
+      "esModuleInterop": true,                    // Suporte para importar bibliotecas CommonJS
+      "skipLibCheck": true,                       // Ignora checagem de tipo nos arquivos de definição (.d.ts)
+      "forceConsistentCasingInFileNames": true,  // Evita problemas com maiúsculas/minúsculas
+      "typeRoots": ["./node_modules/@types", "./@types"] // Para ler suas tipagens personalizadas
+    },
+    "include": ["./**/*.ts", "middlewares/auth.js"],                     // Inclui todos os arquivos .ts do projeto
+    "exclude": ["node_modules", "dist"]           // Exclui pastas que não devem ser analisadas
+  }
+  
